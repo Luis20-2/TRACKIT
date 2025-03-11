@@ -1,0 +1,101 @@
+<Window x:Class="TrackitBorrador.Inicio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TrackitBorrador"
+        mc:Ignorable="d"
+        Height="600" Width="900" Background="Transparent" WindowStyle="None"
+        WindowStartupLocation="CenterScreen">
+
+    <DockPanel Background="White">
+        <!-- Barra superior con TRACKIT -->
+        <DockPanel DockPanel.Dock="Top" Background="#0E2A47" Height="66" Width="897">
+            <TextBlock Text="TRACKIT" Foreground="White" FontSize="16" FontWeight="ExtraBlack" VerticalAlignment="Center" Margin="10,0,20,0"/>
+            <Button x:Name="Button_Inicio" Content="Inicio" Foreground="White" BorderThickness="0" Background="Transparent" HorizontalAlignment="Left" Margin="100,30,0,0" VerticalAlignment="Top" Click="Button_Inicio_Click"/>
+            <Button x:Name="Button_Agenda" Content="Agenda" Foreground="White" BorderThickness="0" Background="Transparent" HorizontalAlignment="Left" Margin="20,30,0,0" VerticalAlignment="Top" Click="Button_Agenda_Click"/>
+            <Button x:Name="Button_Setting" Content="Configuracion" Foreground="White" BorderThickness="0" Background="Transparent" HorizontalAlignment="Left" Margin="20,30,0,0" VerticalAlignment="Top" Grid.ColumnSpan="2" Height="18" Width="81" Click="Button_Setting_Click"/>
+            <Button x:Name="Button_Ayuda" Content="Ayuda" Foreground="White" BorderThickness="0" Background="Transparent" HorizontalAlignment="Left" Margin="20,30,0,0" VerticalAlignment="Top" Grid.Column="1" Grid.ColumnSpan="3" Click="Button_Ayuda_Click"/>
+
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center" Margin="0,0,10,0">
+                <Button x:Name="Button_Buscador" Content="🔍" Foreground="White" BorderThickness="0" Background="Transparent" Click="Button_Buscador_Click"/>
+                <Button x:Name="Button_Notificaciones" Content="🔔" Foreground="White" BorderThickness="0" Background="Transparent" Margin="10,0,0,0" Click="Button_Notificaciones_Click"/>
+                <Button x:Name="Button_Perfil" Content="👤 Perfil de Usuario" Foreground="White" BorderThickness="0" Background="Transparent" Margin="10,0,0,0" Click="Button_Perfil_Click"/>
+            </StackPanel>
+
+        </DockPanel>
+
+        <!-- Barra lateral -->
+
+        <DockPanel HorizontalAlignment="Left" Width="200">
+            <Menu Height="450" Background="WhiteSmoke" Margin="0,-50,0,0">
+                <Menu.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Orientation="Vertical"/>
+                    </ItemsPanelTemplate>
+                </Menu.ItemsPanel>
+                <!-- Boton de inventario-->
+                <MenuItem x:Name="Button_Inventario" Header="Inventario" Click="Button_Inventario_Click" Margin="0,20,0,0" >
+                    <MenuItem.Icon>
+                        <Image Source="/Styles/Inventario1.jpg" Width="16" Height="16"/>
+                    </MenuItem.Icon>
+                    <!--Registro de productos-->
+                    <MenuItem x:Name="Button_Registro" Header="Registro de productos" Click="Button_Productos" >
+                    </MenuItem>
+                    <!-- lista de productos-->
+                    <MenuItem x:Name="Button_Lista" Header="Lista de productos" >
+                    </MenuItem>
+                </MenuItem>
+                
+                <!-- Boton de Empleado-->
+                <MenuItem x:Name="Button_Empleado" Header="Empleado" Click="Button_Empleado_Click" Margin="0,20,0,20">
+                    <MenuItem.Icon>
+                        <Image Source="/Styles/Empleados.png" Width="16" Height="16"/>
+                    </MenuItem.Icon>
+                    <!-- Registro de empleados-->
+                    <MenuItem x:Name="Button_Registro_Empleado" Header="Registro de empleados" >
+                    </MenuItem>
+                    <!-- Lista de empleados-->
+                    <MenuItem x:Name="Button_Lista_Empleado" Header="Lista de empleados" Click="Button_Lista_Empleado_Click" >
+                    </MenuItem>
+                </MenuItem>
+                <!-- Boton de Asistencia-->
+                <MenuItem x:Name="Button_Asistencia" Header="Asistencia" Click="Button_Asistencia_Click" Margin="0,0,0,20">
+                    <MenuItem.Icon>
+                        <Image Source="/Styles/Asistencia.png" Width="16" Height="16"/>
+                    </MenuItem.Icon>
+                    <!-- Registro de asistencia-->
+                    <MenuItem x:Name="Button_Registro_Asistencia" Header="Registro de asistencia" >
+                    </MenuItem>
+                    <!-- Lista de asistencia-->
+                    <MenuItem x:Name="Button_Lista_Asistencia" Header="Lista de asistencia" >
+                    </MenuItem>
+                </MenuItem>
+                <!-- Boton de Reportes-->
+                <MenuItem x:Name="Button_Reportes" Header="Reportes" Click="Button_Reportes_Click">
+                    <MenuItem.Icon>
+                        <Image Source="/Styles/Reportes.png" Width="16" Height="16"/>
+                    </MenuItem.Icon>
+                    <!-- Reporte de inventario-->
+                    <MenuItem x:Name="Button_Reporte_Inventario" Header="Reporte de inventario" >
+                    </MenuItem>
+                    <!-- Reporte de empleados-->
+                    <MenuItem x:Name="Button_Reporte_Empleado" Header="Reporte de empleados" >
+                    </MenuItem>
+                    <!-- Reporte de asistencia-->
+                    <MenuItem x:Name="Button_Reporte_Asistencia" Header="Reporte de asistencia" >
+                    </MenuItem>
+                    <!-- Generar reporte-->
+                    <MenuItem x:Name="Button_Generar_Reporte" Header="Generar reporte" >
+                    </MenuItem>
+                </MenuItem>
+            </Menu>
+          
+            
+            
+        
+        </DockPanel>
+       
+        
+    </DockPanel>
+</Window>
