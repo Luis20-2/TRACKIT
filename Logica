@@ -1,0 +1,129 @@
+using System;
+using System.Windows;
+using TrackitBorrador.Views;
+
+
+namespace TrackitBorrador
+{
+    /// <summary>
+    /// Lógica de interacción para Inicio.xaml
+    /// </summary>
+    
+    public partial class Inicio : Window
+    {
+        public Inicio()
+        {
+            InitializeComponent();
+           
+        }
+        private void Button_Inicio_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Agenda_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Setting_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Ayuda_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Button_Buscador_Click(object sender, RoutedEventArgs e)
+        {
+            // Lógica para el buscador
+        }
+
+        private void Button_Notificaciones_Click(object sender, RoutedEventArgs e)
+        {
+            // Lógica para las notificaciones
+        }
+
+        private void Button_Perfil_Click(object sender, RoutedEventArgs e)
+        {
+            // Lógica para el perfil
+        }
+
+        private void Button_Inventario_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+        private void Button_Registro_Click(object sender, RoutedEventArgs e)
+        {
+            // Limpia el contenido anterior y muestra el control de usuario Registro_Productos
+            GridContent.Children.Clear(); // Limpia el contenido actual
+            GridContent.Children.Add(new Registro_Productos()); // Agrega el control de usuario
+        }
+        private void Button_Lista_Click(object sender, RoutedEventArgs e)
+        {
+            // Lógica para manejar el evento de clic en "Lista de productos"
+            MessageBox.Show("Lista de productos seleccionada.");
+        }
+       
+       private void Button_Empleado_Click(object sender, RoutedEventArgs e)
+        {
+            // Limpia el contenido anterior y muestra el control de usuario Productos
+            //GridContent.Children.Clear(); // Limpia el contenido actual
+            //GridContent.Children.Add(new Productos()); // Agrega el control de usuario
+        }
+        private void Registro_Empleado(object sender, RoutedEventArgs e)
+        {
+            // Limpia el contenido anterior y muestra el control de usuario Proveedores
+            //GridContent.Children.Clear(); // Limpia el contenido actual
+            //GridContent.Children.Add(new Proveedores()); // Agrega el control de usuario
+        }
+        private void Button_Lista_Empleado_Click(object sender, RoutedEventArgs e)
+        {
+            // Limpia el contenido anterior y muestra el control de usuario Lista_Productos
+            //GridContent.Children.Clear(); // Limpia el contenido actual
+            //GridContent.Children.Add(new Lista_Productos()); // Agrega el control de usuario
+        }
+        private void Button_Asistencia_Click(object sender, RoutedEventArgs e)
+        {
+            // Lógica para manejar el evento de clic en "Reporte de inventario"
+            MessageBox.Show("Reporte de inventario seleccionado.");
+        }
+        private void Lista_Asistencia_Click(object sender, RoutedEventArgs e)
+        {
+            // Lógica para manejar el evento de clic en "Lista de productos"
+            MessageBox.Show("Lista de productos seleccionada.");
+        }
+        private void Registro_Asistencia_Click(object sender, RoutedEventArgs e)
+        {
+            // Lógica para manejar el evento de clic en "Registro de asistencia"
+            MessageBox.Show("Registro de asistencia seleccionado.");
+        }
+        private void Button_Reportes_Click(object sender, RoutedEventArgs e)
+        {
+            // Lógica para manejar el evento de clic en "Lista de productos"
+            MessageBox.Show("Lista de productos seleccionada.");
+        }
+        private void Reporte_Inventario_Click(object sender, RoutedEventArgs e)
+        {
+            // Lógica para manejar el evento de clic en "Lista de productos"
+            MessageBox.Show("Lista de productos seleccionada.");
+        }
+        private void Reporte_Empleado_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Reporte_Asistencia_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void Button_Generar_Reporte_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+       
+      
+    }
+} 
